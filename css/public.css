@@ -64,6 +64,7 @@ footer{
     color: #939494;
     position: fixed;
     bottom: 0;
+    left: 0; 
 }
 .footer_p{
     width: 100%;
