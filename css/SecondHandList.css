@@ -1,0 +1,44 @@
+.box{
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+article{
+    width: 100%;
+    height: 6.2rem;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    position: relative;
+
+}
+article>form{
+    width: 100%;
+    height: 100%;
+}
+article>form>input{
+    width: 100%;
+    height: 4rem;
+    border: 0.1rem solid #CCCCCC;
+    border-radius: 0.5rem;
+    text-indent: 1rem;
+}
+article>span{
+    display: inline-block;
+    width: 0.8rem;
+    height: 2rem;
+    color: #515050;
+    position: absolute;
+    top: 2rem;
+    right: 7rem;
+}
+article>a{
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 1.8rem;
+    right: 2rem;
+}
+article>a>img{
+    width: 2rem;
+}
