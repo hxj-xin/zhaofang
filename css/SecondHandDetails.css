@@ -41,11 +41,18 @@ main{
     line-height: 1.8rem;
     padding: 1rem 0;
     font-size: 1.4rem;
+    background: url(../img/SecondHandList/phone.png) no-repeat 26.5rem 1rem;
+    background-size: 1.2rem;
+}
+.nav_top_p1>span{
+    color: #F13F2F;
+    font-weight: bold;
 }
 .nav_top>span{
     font-size: 1.2rem;
     display: block;
     margin-bottom: 1.3rem;
+    color: #B0B0B0;
 }
 .nav_top_p2{
     width: 100%;
@@ -54,6 +61,7 @@ main{
 .nav_top_p2>span{
     display: inline-block;
     padding: 0.5rem;
+    color: #7D9BAE;
     background-color: #DBE9F0;
     margin-right: 1rem;
 }
@@ -129,6 +137,7 @@ main{
     font-size: 1.2rem;
     line-height: 5rem;
     text-align: center;
+    color: #666666;
 }
 /* 户型分间 */
 .type{
@@ -225,6 +234,8 @@ main{
     font-size: 1.2rem;
     display: flex;
     align-items: center;
+    border-bottom: 0.1rem solid #E5E5E5;
+
 }
 .education>ul>li>p{
     flex: 1;
@@ -264,3 +275,159 @@ main{
     height: 100%;
 }
 /* 推荐房源 */
+.recommend{
+    width: 100%;
+    padding: 0 2rem ;
+    box-sizing: border-box;
+    background-color: white;
+    border-top: 0.1rem solid #E5E5E5;
+    border-bottom: 0.1rem solid #E5E5E5;
+}
+.recommend>h2{
+    color: #FF8D00;
+    height: 5.4rem;
+    line-height: 5.4rem;
+    border-bottom: 0.1rem solid #E5E5E5;
+    font-size: 1.6rem;
+}
+.recommend>ul{
+    width: 100%;
+    border-top: 0.1rem solid #E5E5E5;
+    border-bottom: 0.1rem solid #E5E5E5;
+
+}
+.recommend>ul>li{
+    width: 100%;
+    height: 18.8rem;
+    padding: 2rem 0;
+    box-sizing: border-box;
+}
+.recommend>ul>li:nth-of-type(1){
+    border-bottom: 0.1rem solid #E5E5E5;
+}
+.recommend_top{
+    width: 100%;
+    height: 10.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recommend_l{
+    width: 8.1rem;
+    height: 8.1rem;
+}
+.recommend_r{
+    width: 18.7rem;
+    height: 10.5rem;
+}
+.recommend_l>img{
+    width: 100%;
+    height: 100%;
+}
+.recommend_rp1{
+    width: 100%;
+    height: 2.4rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.recommend_rp2,
+.recommend_rp3,
+.recommend_rp4{
+    width: 100%;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    font-size: 1.2rem;
+}
+.recommend_rp2>span{
+    color: #FF8300;
+    font-weight: bold;
+}
+.recommend_rp3{
+    color: #999999;
+}
+.recommend_rp4>span{
+    background-color: #f0f2f3;
+    color: #7D9BAE;
+    padding: 0.2rem 0.5rem;
+}
+.recommend_btm{
+    width: 100%;
+    height: 3.6rem;
+    margin-top: 0.5rem;
+    position: relative;
+}
+.recommend_btm>span{
+    width: 0;
+    height: 0;
+    border-bottom: 1rem solid #F2F2F2;
+    border-top: 1rem solid transparent;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    position: absolute;
+    left: 1rem;
+    top: -2rem;
+}
+.recommend_btm>p{
+    width: 100%;
+    height: 100%;
+    text-indent: 1rem;
+    line-height: 3.6rem;
+    font-size: 1.2rem;
+    background-color: #F2F2F2;
+    color: #000000;
+}
+.recommend>p{
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.2rem;
+    color: #666666;
+}
+/* 固定底部 */
+.fix{
+    width: 100%;
+    height: 5rem;
+    padding: 0.75rem 2rem;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+.fix>div{
+    flex: 1;
+    font-size: 1.2rem;
+    height: 100%;
+}
+
+.fix_l>span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-indent: 4rem;
+    line-height: 3.5rem;
+    background: url(../img/SecondHandList/user.png) no-repeat 1rem 0.5rem;
+    background-size: 2.5rem;
+    background-color: #FF8300;
+    color: white;
+}
+.fix_m>span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-indent: 4rem;
+    line-height: 3.5rem;
+    background: url(../img/SecondHandList/xin.png) no-repeat 1rem 0.5rem;
+    background-size: 2.5rem;
+    color: #000000;
+}

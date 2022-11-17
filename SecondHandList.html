@@ -33,27 +33,27 @@
             <nav>
                 <ul class="nav_list">
                     <li>
-                        <a href="#">区域</a>
+                        <a href="###" class="hidden_a">区域</a>
                         <span></span>
                         <!-- 隐藏：区域 -->
                         <div class="li_itema">
                             <div class="li_itema_top">
                                 <ul>
-                                    <li>
-                                        <a href="#">区域</a>
-                                        <span></span>
+                                    <li  class="hidden_b">
+                                        <a href="#" class="a ab ">区域</a>
+                                        <span class="span sp"></span>
                                     </li>
-                                    <li>
-                                        <a href="#">价格</a>
-                                        <span></span>
+                                    <li class="hidden_b">
+                                        <a href="#" class="ab">价格</a>
+                                        <span class="sp"></span>
                                     </li>
-                                    <li>
-                                        <a href="#">房型</a>
-                                        <span></span>
+                                    <li class="hidden_b">
+                                        <a href="#" class="ab">房型</a>
+                                        <span class="sp"></span>
                                     </li>
-                                    <li>
-                                        <a href="#">更多</a>
-                                        <span></span>
+                                    <li class="hidden_b">
+                                        <a href="#" class="ab">更多</a>
+                                        <span class="sp"></span>
                                     </li>
                                 </ul>
 
@@ -86,32 +86,31 @@
                         </div>
                     </li>
                     <li>
-                        <a href="">价格</a>
+                        <a href="###"  class="hidden_a">价格</a>
                         <span></span>
                         <!-- 隐藏：价格 -->
                         <div class="li_itemb">
-                            <div class="li_itema_top">
+                            <!-- <div class="li_itema_top">
                                 <ul>
-                                    <li>
+                                    <li class="hidden_b">
                                         <a href="#" class="ft">区域</a>
                                         <span></span>
                                     </li>
-                                    <li>
+                                    <li class="hidden_b">
                                         <a href="#">价格</a>
                                         <span></span>
                                     </li>
-                                    <li>
+                                    <li class="hidden_b">
                                         <a href="#">房型</a>
                                         <span></span>
                                     </li>
-                                    <li>
+                                    <li class="hidden_b">
                                         <a href="#">更多</a>
                                         <span></span>
                                     </li>
                                 </ul>
-
                                 
-                            </div>
+                            </div> -->
                             <div class="li_itema_bottom">
                                 <ul>
                                     <li>不限</li>
@@ -127,11 +126,11 @@
                         </div>
                     </li>
                     <li>
-                        <a href="">房型</a>
+                        <a href="###"  class="hidden_a">房型</a>
                         <span></span>
                         <!-- 隐藏：房型 -->
                         <div class="li_itemc">
-                            <div class="li_itema_top">
+                            <!-- <div class="li_itema_top">
                                 <ul>
                                     <li>
                                         <a href="#" class="ft">区域</a>
@@ -151,8 +150,7 @@
                                     </li>
                                 </ul>
 
-
-                            </div>
+                            </div> -->
                             <div class="li_itema_bottom">
                                 <ul>
                                     <li><span>不限</span></li>
@@ -182,11 +180,11 @@
                         </div>
                     </li>
                     <li>
-                        <a href="">更多</a>
+                        <a href="###" class="hidden_a">更多</a>
                         <span></span>
                         <!-- 隐藏：更多 -->
-                        <div class="li_itemd">
-                            <div class="li_itema_top">
+                        <div class="li_itemd" id="li_itemd">
+                            <!-- <div class="li_itema_top">
                                 <ul>
                                     <li>
                                         <a href="#" class="ft">区域</a>
@@ -205,8 +203,8 @@
                                         <span></span>
                                     </li>
                                 </ul>
-                            </div>
-                            <div id="li_itema_bottom">
+                            </div> -->
+                            <div id="li_itema_bottom" class="li_itema_bottom">
                                 <ul  class="li_itemd_ul">
                                     <li>
                                         <p>区域</p>
@@ -263,7 +261,7 @@
                                         </ul>
                                     </li>  
                                 </ul>
-                                <span>清空条件</span>
+                                 <span class="clear">清除条件</span>
                                 <button>确定</button>
                             </div>  
                         </div>
@@ -347,9 +345,6 @@
 
 </html>
 <script src="./js/rem&&zepto/rem.js"></script>
-<script>
-    var my=document.getElementsByClassName('header_r_my')[0];
-    my.onclick=function(){
-        window.location.href='./my.html';
-    }
-</script>
+<script src="./js/touch.min.js"></script>
+<script src="./js/public.js"></script>
+<script src="./js/SecondHandList.js"></script>
