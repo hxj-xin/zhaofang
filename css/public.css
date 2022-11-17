@@ -67,21 +67,19 @@ header {
 /* 底部 */
 footer {
     width: 100%;
-    height: 18rem;
+    height: 15.5rem;
     padding: 0 1.5rem;
     box-sizing: border-box;
     background-color: #2f3130;
     color: #939494;
-    position: fixed;
-    bottom: 0;
 }
 
 .footer_p {
     width: 100%;
-    height: 4.8rem;
-    font-size: 1.6rem;
+    height: 4rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    line-height: 4.8rem;
+    line-height: 4rem;
     border-bottom: 0.1rem solid #3c3c3c;
 }
 
@@ -93,37 +91,47 @@ footer {
 
 .foot_box {
     width: 100%;
-    height: 3.8rem;
+    height: 3.4rem;
     display: flex;
-    margin-bottom: 1.9rem;
+    margin-bottom: 1.1rem;
 }
 
 .foot_box>div {
     flex: 1;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     box-sizing: border-box;
     display: flex;
 }
+<<<<<<< HEAD
 
 .foot_l>.foot_l_a {
     width: 2.5rem;
+=======
+.foot_l>.foot_l_a{
+    width: 2rem;
+>>>>>>> 504817fa8d7ef73b4f7a906827f2fb4a078fbb5a
     height: 100%;
     background: url(../img/index/apple.png) no-repeat 0 0;
-    background-size: 100%;
-    margin-right: 2rem;
+    background-size: 1.8rem;
+    margin-right: 1.5rem;
 }
+<<<<<<< HEAD
 
 .foot_r>.foot_l_a {
     width: 2.5rem;
+=======
+.foot_r>.foot_l_a{
+    width: 2rem;
+>>>>>>> 504817fa8d7ef73b4f7a906827f2fb4a078fbb5a
     height: 100%;
     background: url(../img/index/android.png) no-repeat 0 0;
-    background-size: 100%;
-    margin-right: 2rem;
+    background-size: 1.8rem;
+    margin-right: 1.5rem;
 }
 
 .foot_l_p>span {
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .foot_box_b {
@@ -133,5 +141,10 @@ footer {
 .foot_box_b>p {
     width: 100%;
     text-align: center;
+<<<<<<< HEAD
     font-size: 1.4rem;
 }
+=======
+    font-size: 1.2rem;
+}
+>>>>>>> 504817fa8d7ef73b4f7a906827f2fb4a078fbb5a

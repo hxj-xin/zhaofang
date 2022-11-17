@@ -1,0 +1,406 @@
+.box{
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+    position: relative;
+
+}
+article{
+    width: 100%;
+    height: 6.2rem;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    position: relative;
+
+}
+article>form{
+    width: 100%;
+    height: 100%;
+}
+article>form>input{
+    width: 100%;
+    height: 4rem;
+    border: 0.1rem solid #CCCCCC;
+    border-radius: 0.5rem;
+    text-indent: 1rem;
+}
+article>span{
+    display: inline-block;
+    width: 0.8rem;
+    height: 2rem;
+    color: #515050;
+    position: absolute;
+    top: 2rem;
+    right: 7rem;
+}
+article>a{
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 1.8rem;
+    right: 2rem;
+}
+article>a>img{
+    width: 2rem;
+}
+/* main版心部分 */
+main{
+    width: 100%;
+    height: 45rem;
+}
+nav{
+    width: 100%;
+    height: 5rem;
+    border-top: 0.1rem solid #CCCCCC;
+    border-bottom: 0.1rem solid #CCCCCC;
+    box-sizing: border-box;
+    background-color: white;
+}
+.nav_list{
+    width: 100%;
+    height: 100%;
+    padding: 0 1.2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_list>li{
+    flex: 1;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_list>li>a{
+    font-size: 1.8rem;
+    color: #666666;
+    font-weight: bold;
+}
+.nav_list>li>span{
+    width: 0;
+    height: 0;
+    border-top: 0.5rem solid #CCCCCC;
+    border-bottom: 0.5rem solid transparent;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    margin-left: 0.5rem;
+}
+.nav_list>li>div>.li_itema_top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.nav_list>li>div>.li_itema_bottom{
+    position: fixed;
+    top: 4.2rem;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+
+/* 隐藏部分： 区域*/
+
+.li_itema_top{
+    width: 100%;
+    height: 4.2rem;
+    padding: 0 1.2rem ;
+    box-sizing: border-box;
+    background-color: white;
+    display: none;
+}
+.li_itema_top>ul{
+    width: 100%;
+    height: 4.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.li_itema_top>ul>li{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.li_itema_top>ul>li>a{
+    font-size: 1.8rem;
+    color: #666666;
+    font-weight: bold;
+}
+.li_itema_top>ul>li>span{
+    width: 0;
+    height: 0;
+    border-bottom: 0.5rem solid transparent;
+    border-top: 0.5rem solid #B0B0B0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    margin: 0.5rem 0 0 0.5rem;
+}
+/* 隐藏部分： 区域*/
+.nav_list>li>.li_itema{
+    height: 32rem;   
+}
+.nav_list>li>.li_itema>.li_itema_bottom{
+    display: none;
+}
+
+.hidden_b>.a{
+    color: #FF8a00;
+}
+.hidden_b>.span{
+    border-top: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid #FF8a00;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    margin-top: 0;
+}
+
+.li_itema>.li_itema_bottom{
+    width: 100%;
+    height: 24rem;
+    background-color: white;
+}
+.li_itema_l{
+    width: 8.1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    background-color: #F0F0F0;
+
+}
+.li_itema_l>a{
+    width: 100%;
+    height: 3.4rem;
+    line-height: 3.4rem;
+    font-size: 1.8rem;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+}
+.li_itema_l>.a_click{
+    color: #FF8300;
+    background-color: white;
+}
+.li_itema_bottom>ul{
+    float: left;
+    width: 11rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.li_itema_bottom>ul>li{
+    color: #666666;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.li_itema_m>li:nth-of-type(3){
+    color: #FF8300;
+}
+.li_itema_r>li:nth-of-type(1){
+    color: #FF8300;
+}
+/* 隐藏区域：价格 房型 */
+.nav_list>li>.li_itemb,
+.nav_list>li>.li_itemc{
+    height: 35rem;
+    box-sizing: border-box;
+    background-color: white;
+}
+.li_itemb>.li_itema_bottom,
+.li_itemc>.li_itema_bottom{
+    width: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    background-color: white;
+    display: none;
+}
+.li_itemb>.li_itema_bottom>ul,
+.li_itemc>.li_itema_bottom>ul{
+    width: 100%;
+    color: #666666;
+}
+.li_itemb>.li_itema_bottom>ul>li,
+.li_itemc>.li_itema_bottom>ul>li{
+    width: 100%;
+    height: 4rem;
+    border-bottom: 0.1rem solid #CCCCCC;
+    line-height: 4rem;
+    font-size: 1.2rem;
+}
+.li_itemb>.li_itema_bottom>ul>li{
+    text-align: left;
+}
+.li_itemb>.li_itema_bottom>ul>li:last-of-type,
+.li_itemc>.li_itema_bottom>ul>li:last-of-type{
+    border: none;
+}
+
+.li_itemc>.li_itema_bottom>ul>li{
+    padding-right: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.li_itemc>.li_itema_bottom>ul>li>input{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.1rem solid #e8e5e5;
+    margin-top: 1.5rem;
+
+}
+.li_itemc>.li_itema_bottom>button{
+    width: 100%;
+    height: 4rem;
+    font-size: 1.4rem;
+    background-color: #FF8a00;
+    color: white;
+    border: none;
+}
+
+/* 隐藏部分：更多 */
+main>nav>.nav_list>li:nth-of-type(4)>.hidden_a{
+    background-color: white ;
+}
+
+#li_itemd>#li_itema_bottom{
+    width: 100%;
+    height: 75rem;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    background-color: white;
+    
+}
+.li_itemd>.li_itema_bottom{
+    display: none;
+}
+.li_itemd>#li_itema_bottom>.li_itemd_ul{
+    width: 100%;
+    height: 65rem; 
+}
+#li_itemd>#li_itema_bottom>.li_itemd_ul>li{
+    width: 100%;
+   
+   
+}
+.li_itemd_ul>li>p{
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: start;
+}
+.li_itemd_list{
+    width: 100%;
+    border-bottom: 0.1rem solid #CCCCCC;
+    text-align: start;
+    padding-bottom: 1rem;
+}
+.li_itemd_list>li{
+    display: inline-block;
+    width: 6.2rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    border: 0.1rem solid #CCCCCC;
+    text-align: center;
+    margin: 0 0 1rem 0.4rem;
+}
+.li_itemd_list>li:nth-of-type(4n+1){
+    margin-left: 0;
+}
+#li_itema_bottom>span{
+    display: inline-block;
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #666666;
+}
+#li_itema_bottom>button{
+    width: 100%;
+    height: 4rem;
+    background-color: #FF8a00;
+    border: none;
+    color: white;
+} 
+/* 遮罩 */
+.mask{
+    width: 100%;
+    height: 86rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(22,22,22,.4);
+    display: none;
+}
+/* 版心详情 */
+.mainbox{
+    width: 100%;
+}
+.mainbox>ul{
+    width: 100%;
+    height: 40rem;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.mainbox>ul>li{
+    width:100%;
+    height: 13.5rem;
+    padding: 2rem 0;
+    border-bottom: 0.1rem solid #FFC365;
+    box-sizing: border-box;
+}
+.mainbox>ul>li:nth-of-type(3){
+    border-bottom: none;
+}
+.mainbox_a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainbox_a_l{
+    width: 8.1rem;
+    height:8.1rem;
+    margin-right:1.2rem;
+}
+
+.mainbox_a_l>img{
+    width: 8.1rem;
+    height: 8.1rem;
+}
+.mainbox_a_r{
+    width: 22.5rem;
+    height: 100%;
+    font-size: 1.2rem;
+    color: #B0B0B0;
+}
+.mainbox_a_rp1{
+    font-size: 1.4rem;
+    font-weight: bold;
+    height: 3.1rem;
+    color: #000000;
+}
+.mainbox_a_r>span{
+    display: block;
+    color: #000000;
+    padding: 0.2rem 0;
+}
+.mainbox_a_rp2{
+    padding: 0.2rem 0;
+}
+.mainbox_a_rp2>span{
+    color: #FF8300;
+    font-weight: bold;
+    padding-left: 0.2rem;
+}
