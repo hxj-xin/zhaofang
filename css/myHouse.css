@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.rentalAddr {
+    height: 3.6rem;
+    line-height: 3.6rem;
+    background: #ffffff;
+    border-bottom: 1px solid #c5c5c5;
+    padding-left: 1.5rem;
+}
+
+.content {
+    padding: 0 2rem;
+    font-size: 1.2rem;
+}
+
+.content li {
+    padding: 2rem 0;
+    border-bottom: 1px solid #ff8a00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content li:last-of-type {
+    border-bottom: none;
+}
+
+.content .left img {
+    width: 8.1rem;
+    height: 8.1rem;
+}
+
+.content .right {
+    width: 18.7rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+.content .right h2 {
+    font-size: 1.4rem;
+}
+
+.secondContent .right p {
+    color: #000;
+    line-height: 2.1rem;
+}
+
+.content .right p:first-of-type {
+    margin-top: 0.5rem;
+}
+
+.content .right strong {
+    color: #ff8a00;
+    margin-left: 1.8rem;
+}

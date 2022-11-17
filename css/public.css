@@ -1,18 +1,21 @@
-*{
+* {
     padding: 0;
     margin: 0;
     list-style: none;
     text-decoration: none;
 }
-html{
+
+html {
     font-size: 10px;
 }
-body{
+
+body {
     width: 100%;
     height: 100%;
 }
+
 /* 头部 */
-header{
+header {
     width: 100%;
     height: 5rem;
     background-color: #ff8a00;
@@ -22,40 +25,47 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+
+.logo {
     width: 12rem;
     height: 4rem;
 }
-.logo>a{
+
+.logo>a {
     display: inline-block;
     width: 100%;
     height: 100%;
     background: url(../img/index/logo.jpg) no-repeat 0 0;
     background-size: 100%;
 }
-.header_r{
+
+.header_r {
     width: 11rem;
     height: 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header_r>a{
+
+.header_r>a {
     width: 25%;
     height: 3.5rem;
     display: inline-block;
     margin-left: 25%;
 }
-.header_r>a:nth-of-type(1){
+
+.header_r>a:nth-of-type(1) {
     background: url(../img/index/my.jpg) no-repeat 0 0;
     background-size: 100%;
 }
-.header_r>a:nth-of-type(2){
+
+.header_r>a:nth-of-type(2) {
     background: url(../img/index/xiazai.jpg) no-repeat 0 0;
     background-size: 100%;
 }
+
 /* 底部 */
-footer{
+footer {
     width: 100%;
     height: 18rem;
     padding: 0 1.5rem;
@@ -65,7 +75,8 @@ footer{
     position: fixed;
     bottom: 0;
 }
-.footer_p{
+
+.footer_p {
     width: 100%;
     height: 4.8rem;
     font-size: 1.6rem;
@@ -73,45 +84,53 @@ footer{
     line-height: 4.8rem;
     border-bottom: 0.1rem solid #3c3c3c;
 }
-.foot{
+
+.foot {
     width: 100%;
     padding: 1.8rem 0;
     box-sizing: border-box;
 }
-.foot_box{
+
+.foot_box {
     width: 100%;
     height: 3.8rem;
     display: flex;
     margin-bottom: 1.9rem;
 }
-.foot_box>div{
+
+.foot_box>div {
     flex: 1;
     padding: 0 1rem;
     box-sizing: border-box;
     display: flex;
 }
-.foot_l>.foot_l_a{
+
+.foot_l>.foot_l_a {
     width: 2.5rem;
     height: 100%;
     background: url(../img/index/apple.png) no-repeat 0 0;
     background-size: 100%;
     margin-right: 2rem;
 }
-.foot_r>.foot_l_a{
+
+.foot_r>.foot_l_a {
     width: 2.5rem;
     height: 100%;
     background: url(../img/index/android.png) no-repeat 0 0;
     background-size: 100%;
     margin-right: 2rem;
 }
-.foot_l_p>span{
+
+.foot_l_p>span {
     display: block;
     font-size: 1.4rem;
 }
-.foot_box_b{
+
+.foot_box_b {
     width: 100%;
 }
-.foot_box_b>p{
+
+.foot_box_b>p {
     width: 100%;
     text-align: center;
     font-size: 1.4rem;
