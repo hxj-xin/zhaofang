@@ -1,31 +1,88 @@
-//切换
-var $titleLi = $('.title li');
-var $div = $('form > div');
-$titleLi.tap(function () {
-
-    var index = $(this).index();
-
-    $titleLi.removeClass('active');
-    $(this).addClass('active');
-
-    $div.hide();
-    $div.eq(index).show();
-});
-//验证码
-var min = 60;
-var time;
-var code = Math.floor(Math.random() * 10000) < 1000 ? Math.floor(Math.random() * 10000 + 1000) : Math.floor(Math.random() * 10000);
-$('#code').tap(function () {
-    clearInterval(time);
-    time = setInterval(fn, 1000);
-    alert(code);
-});
 function fn() {
-    min = --min;
-    if (min > 0) {
-        $('#code').html('（' + min + '秒）重发');
-    } else {
-        min = 60;
-        $('#code').html('发送验证码');
+    // 验证手机号
+    var tel = document.getElementsByClassName('tel')[0];
+    var tel_s = document.getElementsByClassName('tel_s')[0];
+    var reg_tel = /^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$/;
+    tel.onblur = function () {
+        tel_s.innerHTML = '';
+        tel_s.className = '';
+        if (reg_tel.test(tel.value)) {
+            tel_s.innerHTML = '正确';
+        } else if (tel.value == '') {
+            tel_s.innerHTML = '';
+        } else {
+            tel_s.innerHTML = '手机号格式不正确';
+        }
+    }
+    // 发送验证码
+    var yzm = document.getElementsByClassName('yzm')[0];
+    num_time_zyz = 60;
+    var timer_zym;
+    var num_yzm;
+    yzm.onclick = function () {
+        clearInterval(timer_zym);
+        if (reg_tel.test(tel.value)) {
+            yzm.innerHTML = `(${num_time_zyz}秒)重发`;
+            timer_zym = setInterval(function () {
+                if (num_time_zyz >= 58) {
+                    num_time_zyz--;
+                    yzm.innerHTML = `(${num_time_zyz}秒)重发`;
+                } else {
+                    num_yzm = Math.ceil(Math.random() * 10000);
+                    if (num_yzm < 1000) {
+                        num_yzm = '0' + num_yzm;
+                    }
+                    alert(num_yzm)
+                    clearInterval(timer_zym);
+                    yzm.innerHTML = `重发验证码`;
+                }
+
+            }, 500)
+
+
+        } else {
+            tel_s.innerHTML = '手机号格式不正确';
+
+        }
+    }
+    // 验证验证码
+    var yzm_text = document.getElementsByClassName('yzm_text')[0];
+    var yzm_text_s = document.getElementsByClassName('yzm_text_s')[0];
+    yzm_text.onblur = function () {
+        yzm_text_s.innerHTML = '';
+        if (yzm_text.value == num_yzm) {
+            yzm_text_s.innerHTML = '正确';
+        } else if (yzm_text.value == '') {
+            yzm_text_s.innerHTML = '';
+        } else {
+            yzm_text_s.innerHTML = '验证码不正确';
+        }
+
+    }
+    // 密码验证
+    var psw = document.getElementsByClassName('psw')[0];
+    var psw_s = document.getElementsByClassName('psw_s')[0];
+    var reg_psw = /^\d{6,8}$/;
+    psw.onblur = function () {
+        psw_s.innerHTML = '密码为6-8位数字';
+        if (reg_psw.test(psw.value)) {
+            psw_s.innerHTML = '正确';
+        } else if (psw.value == '') {
+            psw_s.innerHTML = '密码为6-8位数字';
+        } else {
+            psw_s.innerHTML = '密码格式不正确';
+        }
+    }
+    // 立即注册
+    var btn = document.getElementsByClassName('btn')[0];
+    btn.onclick = function () {
+        if (tel_s.innerHTML == '正确' && yzm_text_s.innerHTML == '正确' && psw_s.innerHTML == '正确') {
+            window.location.href = './login.html';
+            // 存入密码
+            localStorage.setItem('user', tel.value);
+            localStorage.setItem('password', psw.value);
+        }
     }
 }
+
+window.onload = fn;

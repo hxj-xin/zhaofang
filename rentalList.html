@@ -14,10 +14,10 @@
 <body>
     <header>
         <div class="logo">
-            <a href="###"></a>
+            <a href="./index.html"></a>
         </div>
         <div class="header_r">
-            <a href="###" class="header_r_my"></a>
+            <a href="./" class="header_r_my"></a>
             <a href="###"></a>
         </div>
     </header>
@@ -35,130 +35,244 @@
         <!--遮罩层-->
         <div class="hide"></div>
 
-        <ul class="list">
-            <li>
-                <!--添加active类名就可以改变小箭头的方向和颜色-->
-                <h2><a href="#">区域<span></span></a></h2>
-            </li>
-            <li>
-                <h2><a href="#">月租<span></span></a></h2>
-            </li>
-            <li>
-                <h2><a href="#">房型<span></span></a></h2>
-            </li>
-            <li>
-                <h2><a href="#">更多<span></span></a></h2>
-            </li>
-        </ul>
-        <ul class="someList">
-            <!--区域-->
-            <li class="area">
-                <div class="title">
-                    <h2 class="active">区域</h2>
-                    <h2>地铁</h2>
-                </div>
-                <div class="hideList">
-                    <ul>
-                        <li><a href="#">附近</a></li>
-                        <li><a class="active" href="#">不限</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">不限</a></li>
-                        <li><a href="#">安贞</a></li>
-                        <li><a class="active" href="#">朝阳</a></li>
-                        <li><a href="#">奥林匹克公园</a></li>
-                        <li><a href="#">海淀</a></li>
-                        <li><a href="#">百子湾</a></li>
-                        <li><a href="#">昌平</a></li>
-                        <li><a href="#">北工大</a></li>
-                        <li><a href="#">丰台</a></li>
-                        <li><a href="#">北苑</a></li>
-                        <li><a href="#">石景山</a></li>
-                        <li><a href="#">CBD</a></li>
-                    </ul>
-                </div>
-            </li>
-            <!--价格-->
-            <li class="price">
-                <ul>
-                    <li><a href="#">不限</a></li>
-                    <li><a href="#">100万以下</a></li>
-                    <li><a href="#">100万-150万</a></li>
-                    <li><a href="#">150万-200万</a></li>
-                    <li><a href="#">200万-250万</a></li>
-                    <li><a href="#">250万-300万</a></li>
-                    <li><a href="#">自定义价格</a></li>
-                </ul>
-            </li>
-            <!--房型-->
-            <li class="house">
-                <ul>
-                    <li>不限</li>
-                    <li>
-                        1室 <span></span>
-                    </li>
-                    <li>
-                        2室 <span class="active"></span>
-                    </li>
-                    <li>
-                        3室 <span></span>
-                    </li>
-                    <li>
-                        4室 <span></span>
-                    </li>
-                    <li>
-                        5室 <span></span>
-                    </li>
-                    <li><a class="btnOK" href="#">确定</a></li>
-                </ul>
-            </li>
-            <!--更多-->
-            <li class="more">
-                <ul>
-                    <li>
-                        <h3>区域</h3>
-                        <ul class="childList">
-                            <li>南</li>
-                            <li>南北</li>
-                            <li>东</li>
-                            <li>西</li>
-                            <li>北</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>面积（平方）</h3>
-                        <ul class="childList">
-                            <li>50以下</li>
-                            <li>50-70</li>
-                            <li>70-90</li>
-                            <li>90-110</li>
-                            <li>110-130</li>
-                            <li>130-150</li>
-                            <li>150-200</li>
-                            <li>200以上</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>标签</h3>
-                        <ul class="childList">
-                            <li>学区房</li>
-                            <li>地铁房</li>
-                            <li>不限购</li>
-                            <li>满两年</li>
-                            <li>满五唯一</li>
-                            <li>降价</li>
-                            <li>新上</li>
-                            <li>独家</li>
-                            <li>有钥匙</li>
-                        </ul>
-                    </li>
+        <nav>
+            <ul class="nav_list">
+                <li>
+                    <a href="###" class="hidden_a" index="0">区域</a>
+                    <span></span>
+                    <!-- 隐藏：区域 -->
+                    <div class="li_itema">
+                        <div class="li_itema_top" style="display: none;">
+                            <ul>
+                                <li class="hidden_b" index1="0">
+                                    <a href="#" class="ab">区域</a>
+                                    <span class="sp"></span>
+                                </li>
+                                <li class="hidden_b" index1="1">
+                                    <a href="#" class="a ab">价格</a>
+                                    <span class="span sp"></span>
+                                </li>
+                                <li class="hidden_b" index1="2">
+                                    <a href="#" class="ab">房型</a>
+                                    <span class="sp"></span>
+                                </li>
+                                <li class="hidden_b" index1="3">
+                                    <a href="#" class="ab">更多</a>
+                                    <span class="sp"></span>
+                                </li>
+                            </ul>
 
+                        </div>
+                        <div class="li_itema_bottom" style="display: none;">
+                            <div class="li_itema_l">
+                                <a href="###" class="a_click">区域</a>
+                                <a href="###">地铁</a>
+                            </div>
+                            <ul class="li_itema_m">
+                                <li>附近</li>
+                                <li>不限</li>
+                                <li>朝阳</li>
+                                <li>海淀</li>
+                                <li>昌平</li>
+                                <li>丰台</li>
+                                <li>石景山</li>
+                            </ul>
+                            <ul class="li_itema_r">
+                                <li>不限</li>
+                                <li>安贞</li>
+                                <li>奥林匹克公园</li>
+                                <li>百子湾</li>
+                                <li>北工大</li>
+                                <li>北苑</li>
+                                <li>CBD</li>
+                            </ul>
 
-                    <li class="clear"><a href="#">清空条件</a></li>
-                    <li class="btnOK"><a href="#">确定</a></li>
-                </ul>
-            </li>
-        </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="###" class="hidden_a" index="1">价格</a>
+                    <span></span>
+                    <!-- 隐藏：价格 -->
+                    <div class="li_itemb">
+                        <!-- <div class="li_itema_top">
+                            <ul>
+                                <li class="hidden_b">
+                                    <a href="#" class="ft">区域</a>
+                                    <span></span>
+                                </li>
+                                <li class="hidden_b">
+                                    <a href="#">价格</a>
+                                    <span></span>
+                                </li>
+                                <li class="hidden_b">
+                                    <a href="#">房型</a>
+                                    <span></span>
+                                </li>
+                                <li class="hidden_b">
+                                    <a href="#">更多</a>
+                                    <span></span>
+                                </li>
+                            </ul>
+                            
+                        </div> -->
+                        <div class="li_itema_bottom" style="display: none;">
+                            <ul>
+                                <li>不限</li>
+                                <li>100万以下</li>
+                                <li>100万-150万</li>
+                                <li>150万-200万</li>
+                                <li>200万-250万</li>
+                                <li>250万-300万</li>
+                                <li>自定义价格</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="###" class="hidden_a" index="2">房型</a>
+                    <span></span>
+                    <!-- 隐藏：房型 -->
+                    <div class="li_itemc">
+                        <!-- <div class="li_itema_top">
+                            <ul>
+                                <li>
+                                    <a href="#" class="ft">区域</a>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <a href="#">价格</a>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <a href="#">房型</a>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <a href="#">更多</a>
+                                    <span></span>
+                                </li>
+                            </ul>
+
+                        </div> -->
+                        <div class="li_itema_bottom" style="display: none;">
+                            <ul>
+                                <li><span>不限</span></li>
+                                <li>
+                                    <span>1室</span>
+                                    <input type="checkbox">
+                                </li>
+                                <li>
+                                    <span>2室</span>
+                                    <input type="checkbox">
+                                </li>
+                                <li>
+                                    <span>3室</span>
+                                    <input type="checkbox">
+                                </li>
+                                <li>
+                                    <span>4室</span>
+                                    <input type="checkbox">
+                                </li>
+                                <li>
+                                    <span>5室</span>
+                                    <input type="checkbox">
+                                </li>
+                            </ul>
+                            <button>确定</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="###" class="hidden_a" index="3">更多</a>
+                    <span></span>
+                    <!-- 隐藏：更多 -->
+                    <div class="li_itemd" id="li_itemd">
+                        <!-- <div class="li_itema_top">
+                            <ul>
+                                <li>
+                                    <a href="#" class="ft">区域</a>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <a href="#">价格</a>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <a href="#">房型</a>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <a href="#">更多</a>
+                                    <span></span>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div id="li_itema_bottom" class="li_itema_bottom" style="display: none;">
+                            <ul class="li_itemd_ul">
+                                <li>
+                                    <p>区域</p>
+                                    <ul class="li_itemd_list">
+                                        <li>南</li>
+                                        <li>南北</li>
+                                        <li>东</li>
+                                        <li>西</li>
+                                        <li>北</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>面积（平方）</p>
+                                    <ul class="li_itemd_list">
+                                        <li>50以下</li>
+                                        <li>50-70</li>
+                                        <li>70-90</li>
+                                        <li>90-110</li>
+                                        <li>110-130</li>
+                                        <li>130-150</li>
+                                        <li>150-200</li>
+                                        <li>200以上</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>标签</p>
+                                    <ul class="li_itemd_list">
+                                        <li>学区房</li>
+                                        <li>地铁房</li>
+                                        <li>不限购</li>
+                                        <li>满两年</li>
+                                        <li>满五唯一</li>
+                                        <li>降价</li>
+                                        <li>新上</li>
+                                        <li>独家</li>
+                                        <li>有钥匙</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>楼龄</p>
+                                    <ul class="li_itemd_list">
+                                        <li>5年以内</li>
+                                        <li>10年以内</li>
+                                        <li>10-20年</li>
+                                        <li>20年以上</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>楼层</p>
+                                    <ul class="li_itemd_list">
+                                        <li>低楼层</li>
+                                        <li>中楼层</li>
+                                        <li>高楼层</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <span class="clear">清除条件</span>
+                            <button>确定</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </section>
     <!--房屋详细信息-->
     <section>
@@ -227,5 +341,4 @@
 
 </html>
 <script src="./js/rem&&zepto/rem.js"></script>
-<script src="./js/rem&&zepto/zepto.js"></script>
 <script src="./js/rentalList.js"></script>

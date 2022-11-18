@@ -15,32 +15,47 @@
 <body>
     <header>
         <div class="logo">
-            <a href="###"></a>
+            <a href="./index.html"></a>
         </div>
         <div class="header_r">
-            <a href="###"></a>
+            <a href="./my.html"></a>
             <a href="###"></a>
         </div>
     </header>
-    <section class="rentalAddr">
-        <p><strong>首页</strong> &gt; <span>我的</span> &gt; <span>注册</span></p>
-    </section>
-    <section class="registerForm">
-        <form action="#">
+    <section>
+        <nav>
+            <p>
+                <a href="./index.html">首页></a><a href="./my.html">我的></a>
+                <a href="#">注册</a>
+            </p>
+        </nav>
+        <!-- 注册-->
+        <div class="zhuce">
             <ul>
-                <li class="mima">
-                    <input type="text" placeholder="请输入手机号码">
-                    <a id="code" href="#">发送验证码</a>
+                <li>
+                    <input type="text" placeholder="请输入手机号码" class="tel">
+                    <span class="tel_s"></span>
+                    <p></p>
+                    <span class="yzm">发送验证码</span>
+                    <p></p>
                 </li>
-                <li><input type="text" placeholder="请输入短信中的验证码"></li>
-                <li><input type="text" placeholder="请输入新密码"></li>
+                <li>
+                    <input type="text" placeholder="请输入短信中的验证码" class="yzm_text">
+                    <span class="yzm_text_s"></span>
+                </li>
+                <li>
+                    <input type="password" placeholder="请输入新密码" class="psw">
+                    <span class="psw_s">
+                        密码为6-8位数字
+                    </span>
+                </li>
             </ul>
-            <input class="registerBtn" type="submit" value="立即注册">
-        </form>
+        </div>
+        <button class="btn">立即注册</button>
     </section>
 </body>
 
 </html>
 <script src="./js/rem&&zepto/rem.js"></script>
-<script src="./js/rem&&zepto/zepto.js"></script>
+<script src="./js/myCookie.js"></script>
 <script src="./js/register.js"></script>

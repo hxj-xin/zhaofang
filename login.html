@@ -14,60 +14,49 @@
 <body>
     <header>
         <div class="logo">
-            <a href="###"></a>
+            <a href="./index.html"></a>
         </div>
         <div class="header_r">
-            <a href="###"></a>
+            <a href="./my.html"></a>
             <a href="###"></a>
         </div>
     </header>
-    <section class="rentalAddr">
-        <p><strong>首页</strong> &gt; <span>我的</span> &gt; <span>登录</span></p>
-    </section>
-    <section class="registerForm login">
-        <form action="#">
-            <ul class="title">
-                <li class="active">普通登录</li>
-                <li>验证码快捷登录</li>
-            </ul>
-            <div class="customLogin active">
-                <ul>
-                    <li>
-                        <input type="text" placeholder="请输入手机号码">
-                    </li>
-                    <li>
-                        <input type="text" placeholder="请输入密码">
-                    </li>
-                </ul>
-                <input type="submit" class="registerBtn" value="立即登录">
-                <div class="zhuCe">
-                    <a href="#">立即注册</a>
-                    <a href="#">忘记密码</a>
-                </div>
-            </div>
-            <br>
-            <div class="fastLogin">
-                <ul>
-                    <li class="mima">
-                        <input type="text" placeholder="请输入手机号">
-                        <a id="code" href="#">发送验证码</a>
-                    </li>
-                    <li>
-                        <input type="text" placeholder="请输入验证码">
-                    </li>
-                </ul>
-                <input type="submit" class="registerBtn" value="验证并登录">
-                <div class="zhuCe">
-                    <a href="#">立即注册</a>
-                    <a href="#">忘记密码</a>
-                </div>
-            </div>
-        </form>
-    </section>
+    <nav>
+        <p>
+            <a href="./index.html">首页></a><a href="./my.html">我的></a>
+            <a href="#">登录</a>
+        </p>
+    </nav>
+    <ul class="title">
+        <li class="active">普通登录</li>
+        <li>验证码快捷登录</li>
+    </ul>
+    <div class="none">
+        <div class="int">
+            <input type="tell" id="tel" placeholder="请输入手机号码" />
+        </div>
+        <div class="int">
+            <input type="password" id="pass" placeholder="请输入密码" />
+        </div>
+    </div>
+    <div class="none">
+        <div class="int">
+            <input type="tell" id="tell" placeholder="请输入手机号码" />
+            <button>发送验证码</button>
+        </div>
+        <div class="int">
+            <input type="text" id="text" placeholder="请输入短信中的验证码" />
+        </div>
+    </div>
+    <button class="but">立即登录</button>
+    <div class="regester">
+        <a href="./register.html">立即注册</a>
+        <a href="./findPassword.html">忘记密码</a>
+    </div>
 
 </body>
 
 </html>
 <script src="./js/rem&&zepto/rem.js"></script>
-<script src="./js/rem&&zepto/zepto.js"></script>
+<script src="./js/myCookie.js"></script>
 <script src="./js/login.js"></script>

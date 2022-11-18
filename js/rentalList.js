@@ -1,39 +1,59 @@
-var $listLi = $('.list li');
-var $someListLi = $('.someList > li');
-$listLi.click(function () {
-    //        alert(1)
-    //        把导航条置于页面最顶端
-    $('.list').css({
-        'position': 'fixed',
-        'top': '0',
-        'left': '0'
-    });
-    //        出现透明层蒙板
-    $('.hide').show();
-    //        定义当前元素的下标
-    var index = $(this).index();
-    //        给导航上的a元素切换上下箭头及字体颜色
-    $listLi.children('h2').children('a').removeClass('active');
-    $(this).children('h2').children('a').addClass('active');
-
-    $someListLi.hide();
-    //        因为区域下面使用了flex布局，不能直接用display：none隐藏，所以需要判断
-    if (index === 0) {
-        $someListLi.eq(index).css('display', 'flex');
-    } else {
-        $someListLi.eq(index).show();
-    }
-    //        阻止冒泡
-    return false;
-});
-//下面的代码是点击空白区域的时候模板层消失，弹出层消失
-$someListLi.on('click', function () { return false; });
-
-$('body').on('click', function () {
-    $('.list').css({
-        'position': ''
-    });
-    $('.hide').hide();
-    $listLi.children('h2').children('a').removeClass('active');
-    $someListLi.hide();
+var detail = document.getElementsByClassName('mainbox_a')[0];
+touch.on(detail, 'tap', function () {
+    window.location.href = './SecondHandDetails.html';
 })
+
+// fix
+var li_ = document.getElementsByClassName('hidden_a');
+var div_ = document.getElementsByClassName('li_itema_bottom');
+var mask = document.getElementsByClassName('mask')[0];
+var lib = document.getElementsByClassName('hidden_b');
+var tittle = document.getElementsByClassName('li_itema_top')[0];
+var ab = document.getElementsByClassName('ab');
+var sp = document.getElementsByClassName('sp');
+for (var i = 0; i < li_.length; i++) {
+    li_[i].setAttribute('index', i);
+    li_[i].ontouchstart = function () {
+        var index = this.getAttribute('index');
+        for (var k = 0; k < div_.length; k++) {
+            div_[k].style.display = 'none';
+            div_[index].style.display = 'block';
+
+
+        }
+        tittle.style.display = 'block';
+        mask.style.display = 'block';
+        mask.ontouchstart = function () {
+            mask.style.display = 'none';
+            div_[index].style.display = 'none';
+            tittle.style.display = 'none';
+        }
+    }
+    // 获取定位后的内容后
+    lib[i].setAttribute('index1', i);
+    lib[i].ontouchstart = function () {
+        var index1 = this.getAttribute('index1');
+        for (var k = 0; k < div_.length; k++) {
+            div_[k].style.display = 'none';
+            div_[index1].style.display = 'block';
+            for (var j = 0; j < ab.length; j++) {
+                ab[j].className = 'ab';
+                ab[index1].className = 'a ab';
+                for (var y = 0; y < sp.length; y++) {
+                    sp[y].className = 'sp';
+                    sp[index1].className = 'span sp';
+                }
+
+            }
+        }
+        tittle.style.display = 'block';
+        mask.style.display = 'block';
+        mask.ontouchstart = function () {
+            mask.style.display = 'none';
+            div_[index1].style.display = 'none';
+            tittle.style.display = 'none';
+            ab[i].className = 'ab';
+            sp[i].className = 'sp';
+        }
+    }
+}
