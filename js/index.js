@@ -28,3 +28,10 @@ touch.on(link,'tap',function(){
     linka.style.display='none';
     linkb.style.display='block';
 })
+// 
+var close=document.getElementsByClassName('close')[0];
+var fix=document.getElementsByClassName('fix')[0];
+var box=document.getElementsByClassName('box')[0];
+close.ontouchstart=function(){
+    box.removeChild(fix);
+}
