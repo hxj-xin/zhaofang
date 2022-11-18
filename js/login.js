@@ -21,7 +21,7 @@ for (var i = 0; i < item.length; i++) {
     }
 }
 //验证手机号
-var tel = document.getElementById('tel')
+var tel = document.getElementById('tel');
 var reg = /^1[3-9][0-9]{9}$/;
 tel.onfocus = function () {
     document.getElementById('tel').placeholder = '请输入手机号码'

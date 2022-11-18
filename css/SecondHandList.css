@@ -93,14 +93,14 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
 }
 .nav_list>li>div>.li_itema_bottom{
     position: fixed;
     top: 4.2rem;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
 }
 
 
@@ -112,7 +112,7 @@ nav{
     padding: 0 1.2rem ;
     box-sizing: border-box;
     background-color: white;
-    display: none;
+    display: none
 }
 .li_itema_top>ul{
     width: 100%;
@@ -339,6 +339,7 @@ main>nav>.nav_list>li:nth-of-type(4)>.hidden_a{
     left: 0;
     background-color: rgb(22,22,22,.4);
     display: none;
+    /* z-index: 0; */
 }
 /* 版心详情 */
 .mainbox{
